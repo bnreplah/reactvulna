@@ -28,3 +28,14 @@ jobs:
       
       - run: |
           ls ${{ github.workspace }}
+          zip reactvulna.zip ${{ github.workspace }}
+      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          # Artifact name
+          name: reactvulna # optional, default is artifact
+          # A file, directory or wildcard pattern that describes what to upload
+          path: reactvulna.zip
+          # The desired behavior if no files are found using the provided path.
+      
