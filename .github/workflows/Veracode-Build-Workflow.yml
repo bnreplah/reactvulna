@@ -28,7 +28,7 @@ jobs:
       
       - run: |
           ls ${{ github.workspace }}
-          zip reactvulna.zip ${{ github.workspace }}
+          zip reactvulna.zip ${{ github.workspace }}/*
           unzip reactvulna.zip
           ls
           
