@@ -1,2 +1,21 @@
-#
+# A React Native Build Workflow
 name: Veracode Build Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+jobs:
+  build:
+    name: build-and-test
+    runs-on: ubuntu-latest
+    # grants permissions for the artifact to be uploaded
+    permissions:
+      contents: read
+      packages: write
+    
+    steps:
+      - name: npm
+        run: npm --version
