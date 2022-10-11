@@ -42,7 +42,7 @@ jobs:
           # The desired behavior if no files are found using the provided path.
   
   security-scan:
-    runs-on: ubunut-latest
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - uses: actions/checkout@v3
