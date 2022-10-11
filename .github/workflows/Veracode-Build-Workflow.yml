@@ -87,7 +87,7 @@ jobs:
           # replacement
           #replacement: # optional
           # specify to scan in a sandbox
-          sandboxid: true # optional
+          #sandboxid:  # optional
           # All top level modules
           #scanallnonfataltoplevelmodules:  # optional
           # platform selected modules
