@@ -22,5 +22,5 @@ jobs:
       
       - run: ls
       
-      - run: npm build
+      - run: npm install --production
       
