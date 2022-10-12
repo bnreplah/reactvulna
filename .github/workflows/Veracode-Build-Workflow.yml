@@ -28,7 +28,7 @@ jobs:
       
       - run: |
           ls ${{ github.workspace }}
-          zip reactvulna.zip ${{ github.workspace }}*
+          zip -R reactvulna.zip ${{ github.workspace }}/*
           ls
           
       - name: Upload a Build Artifact
