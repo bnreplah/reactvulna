@@ -93,3 +93,12 @@ jobs:
           #summary_output_file: results.txt # optional
           # Enter true to save the scan results in JSON format. Default is true.
           
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          # Artifact name
+          name: baseline # optional, default is artifact
+          # A file, directory or wildcard pattern that describes what to upload
+          path: results.json
+          # The desired behavior if no files are found using the provided path.
+          
