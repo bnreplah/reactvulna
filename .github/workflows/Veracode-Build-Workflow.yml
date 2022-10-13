@@ -82,7 +82,7 @@ jobs:
           
           summary_display: true # optional
           # Enter true to show the JSON containing the scan results on the console. Default is false.
-          json_display: fasle # optional
+          json_display: false # optional
           
           # Enter true to display detailed messages in the scan results. Default is false.
           verbose: true # optional
