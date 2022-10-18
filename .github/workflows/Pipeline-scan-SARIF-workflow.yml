@@ -119,3 +119,16 @@ jobs:
           #source-base-path-3: # optional, default is 
           # The conversion rule of Veracode findings to GitHub level
           #finding-rule-level: # default is 4:3:0
+          
+      - name: Veracode scan results to GitHub issues Action
+        # You may pin to the exact commit or the version.
+        # uses: veracode/veracode-flaws-to-issues@e03c95a2d9ce730870fe160ff77bbce3b7f0e32d
+        uses: veracode/veracode-flaws-to-issues@v1.0.0
+        with:
+          # Scan results file
+          scan-results-json: results.json # default is filtered_results.json
+          # GitHub token to access the repo
+          github-token: ${{ secrets.GH_TOKEN }}
+          # Delay (in seconds) between entering Issues into GitHub (due to rate limiting)
+          #wait-time: # optional, default is 2
+
