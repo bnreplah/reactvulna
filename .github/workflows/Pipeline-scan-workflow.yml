@@ -85,7 +85,7 @@ jobs:
           json_display: false # optional
           
           # Enter true to display detailed messages in the scan results. Default is false.
-          verbose: true # optional
+          verbose: false # optional
           # Enter true to save the scan results as a human-readable file. Default is false.
           
           summary_output: false # optional
